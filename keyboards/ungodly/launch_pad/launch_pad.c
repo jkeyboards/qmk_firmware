@@ -43,19 +43,24 @@ led_config_t g_led_config = { {
 } };
 #endif
 
-void eeconfig_init_kb(void) {
-#ifdef RGBLIGHT_ENABLE
-    rgblight_enable();             // Enable RGB by default
-    rgblight_sethsv(0, 255, 255);  // Set default HSV - red hue, full saturation, full brightness
-#    ifdef RGBLIGHT_ANIMATIONS
-    rgblight_mode(RGBLIGHT_MODE_RAINBOW_SWIRL + 2);  // set to RGB_RAINBOW_SWIRL by default
-#    endif
-#endif
+/*void eeconfig_init_kb(void) {
+*#ifdef RGBLIGHT_ENABLE
+*    rgblight_enable();             // Enable RGB by default
+*    rgblight_sethsv(120, 0, 255);  // Set default HSV - going for a white color here, red hue, no saturation, full brightness
+*#    ifdef RGBLIGHT_ANIMATIONS
+*    rgblight_mode(RGBLIGHT_MODE_STATIC_LIGHT);  // set to RGB_RAINBOW_SWIRL by default RGBLIGHT_MODE_RAINBOW_SWIRL + 2 was in the ()
+*#    endif
+*#endif
+*/
 
-#ifdef RGB_MATRIX_ENABLE
-    rgb_matrix_enable();  // Enable RGB by default
-#endif
-
-    eeconfig_update_kb(0);
-    eeconfig_init_user();
-}
+/*#ifdef RGB_MATRIX_ENABLE
+*    rgb_matrix_mode(RGB_MATRIX_SOLID_REACTIVE_SIMPLE);
+*    rgb_matrix_sethsv(120, 0, 231);
+*    // rgb_matrix_enable();  // Enable RGB by default
+*#endif
+*
+*
+*    eeconfig_update_kb(0);
+*    eeconfig_init_user();
+*}
+*/

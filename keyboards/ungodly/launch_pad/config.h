@@ -41,12 +41,15 @@
 #define ENCODER_RESOLUTION 2
 
 /* Midi Slider */
-#define SLIDER_PIN F6
+#define SLIDER_PIN F6 
 
 /* RGB Matrix configuration */
-#ifdef RGB_MATRIX_ENABLE
+//#ifdef RGB_MATRIX_ENABLE
 #    define RGB_MATRIX_KEYPRESSES
-#endif
+#    define DRIVER_LED_TOTAL RGBLED_NUM
+#    define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_REACTIVE_SIMPLE
+//#endif
+
 
 #define RGB_DI_PIN F7
 #ifdef RGB_DI_PIN
@@ -54,14 +57,14 @@
 #    define RGBLIGHT_HUE_STEP 8
 #    define RGBLIGHT_SAT_STEP 8
 #    define RGBLIGHT_VAL_STEP 8
-#    define RGBLIGHT_LIMIT_VAL 255 /* The maximum brightness level */
+#    define RGBLIGHT_LIMIT_VAL 231 /* The maximum brightness level. 255 is max available*/
 #    define RGBLIGHT_SLEEP         /* If defined, the RGB lighting will be switched off when the host goes to sleep */
 /*== all animations enable ==*/
-#    define RGBLIGHT_ANIMATIONS
+// #    define RGBLIGHT_ANIMATIONS /*commenting to possibly get rid of rainbow bleh*/
 // RGB Matrix
-#    ifdef RGB_MATRIX_ENABLE
-#        define DRIVER_LED_TOTAL RGBLED_NUM
-#    endif
+//#    ifdef RGB_MATRIX_ENABLE
+//#        define DRIVER_LED_TOTAL RGBLED_NUM
+//#    endif
 #endif
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
