@@ -51,7 +51,7 @@
 #    define RGB_MATRIX_STARTUP_HUE 120
 #    define RGB_MATRIX_STARTUP_SAT 0
 #    define RGB_MATRIX_STARTUP_VAL 231
-#    define RGB_MATRIX_STARTUP_SPD 10
+#    define RGB_MATRIX_STARTUP_SPD 50
 //#endif
 
 
