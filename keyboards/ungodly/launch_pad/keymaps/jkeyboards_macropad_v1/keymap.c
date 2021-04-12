@@ -40,7 +40,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
 		case DISCORD:
 			if (record->event.pressed) {
-			    SEND_STRING(SS_TAP(X_LGUI) "discord" SS_DELAY(500) SS_TAP(X_ENT));
+			    SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(250) "discord" SS_DELAY(250) SS_TAP(X_ENT));
 			} else {
 			    //when keycode is released
 			}
@@ -48,7 +48,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 		case APEX:
 			if (record->event.pressed) {
-			    SEND_STRING(SS_TAP(X_LGUI) "apex legends" SS_DELAY(500) SS_TAP(X_ENT));
+			    SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(250) "apex legends" SS_DELAY(250) SS_TAP(X_ENT));
 			} else {
 			    //when keycode is released
 			}
@@ -56,7 +56,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 		case ORIGIN:
 			if (record->event.pressed) {
-			    SEND_STRING(SS_TAP(X_LGUI) "origin" SS_DELAY(500) SS_TAP(X_ENT));
+			    SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(250) "origin" SS_DELAY(250) SS_TAP(X_ENT));
 			} else {
 			    //when keycode is released
 			}
@@ -64,7 +64,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 		case VIA:
 			if (record->event.pressed) {
-			    SEND_STRING(SS_TAP(X_LGUI) "via" SS_DELAY(500) SS_TAP(X_ENT));
+			    SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(250) "via" SS_DELAY(250) SS_TAP(X_ENT));
 			} else {
 			    //when keycode is released
 			}
@@ -72,14 +72,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 		case GH:
 			if (record->event.pressed) {
-			    SEND_STRING(SS_TAP(X_LGUI) "github desktop" SS_DELAY(500) SS_TAP(X_ENT));
+			    SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(250) "github desktop" SS_DELAY(250) SS_TAP(X_ENT));
 			} else {
 			    //when keycode is released
 			}
 			break;
 		case AI:
 			if (record->event.pressed) {
-			    SEND_STRING(SS_TAP(X_LGUI) "adobe illustrator" SS_DELAY(500) SS_TAP(X_ENT));
+			    SEND_STRING(SS_TAP(X_LGUI) SS_DELAY(250) "adobe illustrator" SS_DELAY(250) SS_TAP(X_ENT));
 			} else {
 			    //when keycode is released
 			}
